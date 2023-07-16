@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="192" id="KGk-i7-Jjw" customClass="TaskPriorityCell" customModule="To_Do_Manager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Описание типа" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsW-17-UVn">
+                        <rect key="frame" x="20" y="37" width="331" height="125"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название типа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huX-15-ySC">
+                        <rect key="frame" x="20" y="11" width="375" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jsW-17-UVn" secondAttribute="bottom" constant="5" id="72b-qX-gUm"/>
+                    <constraint firstItem="jsW-17-UVn" firstAttribute="top" secondItem="huX-15-ySC" secondAttribute="bottom" constant="5" id="HNP-w5-QXz"/>
+                    <constraint firstItem="huX-15-ySC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JlK-xd-BJy"/>
+                    <constraint firstItem="huX-15-ySC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MTN-DW-t4j"/>
+                    <constraint firstItem="jsW-17-UVn" firstAttribute="leading" secondItem="huX-15-ySC" secondAttribute="leading" id="RlA-bp-xZ2"/>
+                    <constraint firstAttribute="trailing" secondItem="jsW-17-UVn" secondAttribute="trailing" constant="5" id="r2u-o1-LDm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="huX-15-ySC" secondAttribute="trailing" constant="5" id="bcC-EN-Gl1"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <connections>
+                <outlet property="taskPriorityDescriptionLabel" destination="jsW-17-UVn" id="Ebj-Ck-Q6J"/>
+                <outlet property="taskPriorityNameLabel" destination="huX-15-ySC" id="MPZ-Wi-tDS"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
